@@ -7,12 +7,11 @@ export class HomePage extends BasePage {
   readonly addCommentButton: Locator;
   readonly commentInput: Locator;
   readonly submitPostButton: Locator;
-  //  readonly postComment => (username: string): Locator;
   public readonly posts: (username: string) => Locator;
 
   constructor(page: Page) {
     super("/", page);
-    
+
     this.firstPost = page.locator('[slot="full-post-link"]').first();
     this.commentButton = page
       .locator('[name="comments-action-button"]')
