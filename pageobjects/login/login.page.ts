@@ -17,6 +17,7 @@ export class LoginPage extends BasePage {
     await this.insertUsername(options.username);
     await this.insertPassword(options.password);
     await this.loginButton.click();
+    await this.page.waitForLoadState();
   }
 
   async insertUsername(username: string) {

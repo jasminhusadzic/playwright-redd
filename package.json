@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pw:open": "npx playwright test --headed --ui"
+    "pw:open": "npx playwright test --headed --ui",
+    "pw:run": "npx playwright test --trace on"
   },
   "repository": {
     "type": "git",
