@@ -14,10 +14,10 @@ export class LoginPage extends BasePage {
   }
 
   async login(options: { username: string; password: string }) {
+    await this.page.waitForLoadState();
     await this.insertUsername(options.username);
     await this.insertPassword(options.password);
     await this.loginButton.click();
-    await this.page.waitForLoadState();
   }
 
   async insertUsername(username: string) {
