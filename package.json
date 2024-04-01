@@ -1,0 +1,21 @@
+{
+  "name": "playwright-redd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pw:open": "npx playwright test --headed --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-priv:jasminhusadzic/playwright-redd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.12.2",
+    "dotenv": "^16.4.5"
+  }
+}
